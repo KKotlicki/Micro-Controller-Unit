@@ -1,0 +1,186 @@
+# Reading pref.tcl
+# do help_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/plikiintel/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Szaryus/Desktop/13 {C:/Users/Szaryus/Desktop/13/help.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:21:05 on Jan 28,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Szaryus/Desktop/13" C:/Users/Szaryus/Desktop/13/help.v 
+# -- Compiling module help
+# 
+# Top level modules:
+# 	help
+# End time: 01:21:05 on Jan 28,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.help
+# vsim work.help 
+# Start time: 01:21:14 on Jan 28,2021
+# Loading work.help
+add wave -position insertpoint  \
+sim:/help/HEX0 \
+sim:/help/HEX1 \
+sim:/help/HEX2 \
+sim:/help/HEX3
+add wave -position insertpoint  \
+sim:/help/div_clk \
+sim:/help/slow_clk \
+sim:/help/aut_reg \
+sim:/help/aut_next
+add wave -position insertpoint localparam
+# ** UI-Msg: (vish-4014) No objects found matching 'localparam'.
+# Note :: PA Debug File '' not found. PA Dataflow Coloring not enabled.
+add wave -position insertpoint  \
+sim:/help/P \
+sim:/help/L \
+sim:/help/U \
+sim:/help/S \
+sim:/help/NULL
+force -freeze sim:/help/HEX0 1 0, 0 {50 ps} -r 100
+force -freeze sim:/help/HEX1 1 0, 0 {50 ps} -r 100
+force -freeze sim:/help/HEX2 1 0, 0 {50 ps} -r 100
+force -freeze sim:/help/HEX3 1 0, 0 {50 ps} -r 100
+force -freeze sim:/help/div_clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/help/slow_clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/help/aut_reg 1 0, 0 {50 ps} -r 100
+force -freeze sim:/help/aut_next 1 0, 0 {50 ps} -r 100
+run
+# WARNING: No extended dataflow license exists
+run
+run
+add wave -position insertpoint  \
+sim:/help/s0 \
+sim:/help/s1 \
+sim:/help/s2 \
+sim:/help/s3 \
+sim:/help/s4 \
+sim:/help/s5 \
+sim:/help/s6 \
+sim:/help/s7
+force -freeze sim:/help/s0 1 0, 0 {50 ps} -r 100
+# ** Fatal: (vsim-3379) Invalid target for force (parameter): 's0'.
+#    Time: 950 ps  Iteration: 1  Instance: /help File: C:/Users/Szaryus/Desktop/13/help.v
+force -freeze sim:/help/s1 1 0, 0 {50 ps} -r 100
+# ** Fatal: (vsim-3379) Invalid target for force (parameter): 's1'.
+#    Time: 950 ps  Iteration: 1  Instance: /help File: C:/Users/Szaryus/Desktop/13/help.v
+force -freeze sim:/help/s2 1 0, 0 {50 ps} -r 100
+# ** Fatal: (vsim-3379) Invalid target for force (parameter): 's2'.
+#    Time: 950 ps  Iteration: 1  Instance: /help File: C:/Users/Szaryus/Desktop/13/help.v
+force -freeze sim:/help/s3 1 0, 0 {50 ps} -r 100
+# ** Fatal: (vsim-3379) Invalid target for force (parameter): 's3'.
+#    Time: 950 ps  Iteration: 1  Instance: /help File: C:/Users/Szaryus/Desktop/13/help.v
+force -freeze sim:/help/s4 1 0, 0 {50 ps} -r 100
+# ** Fatal: (vsim-3379) Invalid target for force (parameter): 's4'.
+#    Time: 950 ps  Iteration: 1  Instance: /help File: C:/Users/Szaryus/Desktop/13/help.v
+force -freeze sim:/help/s5 1 0, 0 {50 ps} -r 100
+# ** Fatal: (vsim-3379) Invalid target for force (parameter): 's5'.
+#    Time: 950 ps  Iteration: 1  Instance: /help File: C:/Users/Szaryus/Desktop/13/help.v
+force -freeze sim:/help/s6 1 0, 0 {50 ps} -r 100
+# ** Fatal: (vsim-3379) Invalid target for force (parameter): 's6'.
+#    Time: 950 ps  Iteration: 1  Instance: /help File: C:/Users/Szaryus/Desktop/13/help.v
+force -freeze sim:/help/s7 1 0, 0 {50 ps} -r 100
+# ** Fatal: (vsim-3379) Invalid target for force (parameter): 's7'.
+#    Time: 950 ps  Iteration: 1  Instance: /help File: C:/Users/Szaryus/Desktop/13/help.v
+run
+# Fatal error at an unknown location
+# 
+run
+# Cannot continue because of fatal error.
+run
+# Cannot continue because of fatal error.
+add wave -position insertpoint  \
+sim:/help/clk \
+sim:/help/reset
+force -freeze sim:/help/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/help/reset 1 0, 0 {50 ps} -r 100
+run
+# Cannot continue because of fatal error.
+run
+# Cannot continue because of fatal error.
+run
+# Cannot continue because of fatal error.
+run
+# Cannot continue because of fatal error.
+run
+# Cannot continue because of fatal error.
+run
+# Cannot continue because of fatal error.
+run
+# Cannot continue because of fatal error.
+run
+# Cannot continue because of fatal error.
+run
+# Cannot continue because of fatal error.
+run
+# Cannot continue because of fatal error.
+run -all
+# Cannot continue because of fatal error.
+run -all
+# Cannot continue because of fatal error.
+add wave -position insertpoint  \
+sim:/help/ledg
+force -freeze sim:/help/ledg 1 0, 0 {50 ps} -r 100
+run
+# Cannot continue because of fatal error.
+run
+# Cannot continue because of fatal error.
+run
+# Cannot continue because of fatal error.
+# Break key hit
+# Break key hit
+run
+# Cannot continue because of fatal error.
+run
+# Cannot continue because of fatal error.
+run
+# Cannot continue because of fatal error.
+run
+# Cannot continue because of fatal error.
+run
+# Cannot continue because of fatal error.
+run
+# Cannot continue because of fatal error.
+run
+# Cannot continue because of fatal error.
+run
+# Cannot continue because of fatal error.
+run
+# Cannot continue because of fatal error.
+run
+# Cannot continue because of fatal error.
+run
+# Cannot continue because of fatal error.
+run
+# Cannot continue because of fatal error.
+run
+# Cannot continue because of fatal error.
+run
+# Cannot continue because of fatal error.
+add wave -position insertpoint  \
+sim:/help/ledg
+run
+# Cannot continue because of fatal error.
+run
+# Cannot continue because of fatal error.
+run
+# Cannot continue because of fatal error.
+run
+# Cannot continue because of fatal error.
+run
+# Cannot continue because of fatal error.
+run
+# Cannot continue because of fatal error.
+run
+# Cannot continue because of fatal error.
+run
+# Cannot continue because of fatal error.
+# End time: 01:28:05 on Jan 28,2021, Elapsed time: 0:06:51
+# Errors: 8, Warnings: 0

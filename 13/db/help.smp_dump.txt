@@ -1,0 +1,11 @@
+
+State Machine - |help|aut_reg
+Name aut_reg.s7 aut_reg.s6 aut_reg.s5 aut_reg.s4 aut_reg.s3 aut_reg.s2 aut_reg.s1 aut_reg.s0 
+aut_reg.s0 0 0 0 0 0 0 0 0 
+aut_reg.s1 0 0 0 0 0 0 1 1 
+aut_reg.s2 0 0 0 0 0 1 0 1 
+aut_reg.s3 0 0 0 0 1 0 0 1 
+aut_reg.s4 0 0 0 1 0 0 0 1 
+aut_reg.s5 0 0 1 0 0 0 0 1 
+aut_reg.s6 0 1 0 0 0 0 0 1 
+aut_reg.s7 1 0 0 0 0 0 0 1 
